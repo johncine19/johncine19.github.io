@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x:hidden ;
+    color: white;
+    background-color: black;
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:35px 12%;
+    background: #a07979;
+    backdrop-filter:blur(50px); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover{
+transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: #b74b4b;
+    border-bottom:3px solid #b74b4b;
+
+}
+
+@media(max-width:995px){
+nav{
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    width: 40%;
+    border-left: 3px solid #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+    border-bottom-left-radius:2rem ;
+    padding: 1rem solid;
+    background-color: #161616;
+    border-top:0.1rem solid rgba(0,0,0,0,) ;
+ }
+
+    nav.active{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+
+    }
+
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius:0.5rem ;
+        border-bottom: 0.5rem solid #b74b4b;
+    }
+
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+
+}
+
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+
+}
+
+.home-content h3{
+    font-size:4rem ;
+    margin-bottom: 1rem;
+    font-weight: 700;
+
+}
+
+.home-content p{
+    font-size: 2rem;
+    text-align: justify;
+}
+
+span{
+    color: #b74b4b;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-img{
+    border: 50%;
+}
+
+.home-img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #b74b4b;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover{
+    font-size:1.8rem ;
+    font-weight: 500;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #b74b4b;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #b74b4b;
+}
+
+.social-icons a:hover{
+    color: rgb(226, 73, 45);
+    transform: scale(1.3)translateY(-5px);
+    background-color: 0 0 25px #b74b4b;
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+.btn{
+    display: inline-flex;
+    padding: 1rem 2.8rem ;
+    background-color: black;
+    border-radius: 4rem ;
+    font-size: 1.6rem;
+    color: #b74b4b;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #b74b4b;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: #b74b4b;
+    color: black;
+    box-shadow:0 0 25px #b74b4b;
+
+}
+
+.btn-1{
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid ;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-1:hover{ 
+    background-color: #b74b4b;
+    color: black;
+    border: 2px solid rgb(10, 10, 10);
+    opacity: 50px;
+}
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width:280px ;
+
+}
+
+.typing-text span{
+    position: relative;
+
+}
+
+.typing-text span::before{
+    content: "Software Developer";
+    color: #b74b4b;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px) ;
+    border-left: 3px solid black;
+    height: 100%;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+::-webkit-scrollbar{
+    width: 15px;    
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(101, 181, 247);
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgba(91, 185, 223, 0.6);
+    width: 50px;
+}
+
+
+/* about section*/
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    
+    background-image: url(jujutsu-kaisen-anime-boys-yuji-itadori-ryomen-sukuna-hd-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    
+    
+}
+
+.about-img img{
+    position: left;
+    width: 500px;
+    box-shadow: 0 0 25px rgb(37, 34, 235),
+                0 0 45px rgb(11, 43, 228);
+    border-radius: 50%;   
+    width: 450px;      
+    margin-left: 8px;   
+    margin-right: 4px;
+}
+
+
+.about-content h2{
+
+    text-align: le ;
+    color: white;
+    font-size: 42px;
+}
+
+.about-content h3{
+  
+    font-size: 50px;
+    color: white;
+}
+
+.about-content p {
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+    
+}
+
+
+/*contanct section*/
+
+.contact-form h2{
+    text-align: left;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+
+}
+.contact-form form{
+    max-width: 50em;
+    margin: 2rem auto;
+    text-align: center ;
+    margin-bottom: 1em; 
+   
+}
+
+
+.contact-form form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.contact-form form .input-box input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 25px;
+    font-size: 18px;
+    color: rgb(7, 7, 7);
+    background: rgb(240, 245, 245);
+    border-radius: 1rem;
+    resize: none;
+   
+}
+
+.contact-form{
+ /* background-image: url(Super-cool-picture-backgrounds.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+.contact-form  h2{
+    color: white;
+   text-align: center; 
+   gap: 2em;
+}
+
+
+/*footer section*/
+
+
+
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color:black;
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px ;
+    color: white;
+}
+
+.footer .social a{
+    font-size: 24px;
+    color: white;
+    border: 2px solid rgb(12, 54, 238);
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px rgb(75, 75, 233), 0 0 10px rgb(53, 134, 226) ;
+    transition: 0.3s ease;
+}
+
+.footer .social a:hover{
+    transform: scale(1.2) translateY(-10px);
+    color: rgb(14, 210, 245);
+    border: 2px solid rgb(15, 121, 221);
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: rgb(240, 235, 235);
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease ;
+}
+
+.footer ul li a:hover{
+    border-bottom: 3px solid rgb(35, 101, 243);
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size:  15px; 
+    color:rgb(243, 238, 238) ;
+}
+
+
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #b74b4b;
+    }
+}
+
+@keyframes words{
+    0%{
+        content: "web Developer";
+    }
+
+    21%,40%{
+        content: "Developer";
+    }
+
+    41%,60%{
+        content: "web designer";
+    }
+    61%,80%{
+        content: "college Student";
+    }
+    81%,100%{
+        content: "good Person";
+    }
+}
+
+@media(max-width:1000px){
+    .home{
+        gap: 4rem;
+    }
+}
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home .home-content h3{
+        font-size: 2.5rem;
+    }
+
+    .home .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-img img{
+        width:40vh ;
+        margin-top: 4rem;
+       
+    }
+}
+
+
+.container{
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
+}

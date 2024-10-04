@@ -1,0 +1,432 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(7, 54, 107, 0.8);
+    backdrop-filter:blur(-10px) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+
+}
+.logo:hover{
+    color: rgb(12, 167, 228);
+    text-shadow: 0 0 25px rgb(89, 223, 247),
+                 0 0 50px rgb(79, 49, 211);
+    transform: scale(1.1);       
+}
+
+
+
+span{
+    color: rgb(70, 194, 243);
+              
+}
+
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover ,
+.navbar a.active{
+    text-shadow:0 0 25px rgb(67, 210, 241),
+    0 0 50px rgb(99, 69, 235); ;
+    color: rgb(44, 153, 243);
+    border-bottom: 3px solid rgb(168, 43, 241);
+}
+
+.contact{
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact:hover{
+    background-color: rgb(97, 66, 212);
+    box-shadow: 0, 0 ,25px rgb(104, 129, 241);
+    color: white;
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(Super-cool-picture-backgrounds.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode:lighten ;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    gap: 6em;
+    padding: 30px 12% 0;
+}
+
+.home-content{
+    max-width: 800px;
+}
+
+
+
+.home-content h3{
+    font-size: 42px;
+}
+
+.home-content h1{
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 25px 0 30px;  
+   font-style: italic;
+    text-align: justify;
+    
+}
+
+.paragraph{
+    font-size: 22px;
+    color: #f8f4f7;
+    font-style: italic;
+    font-family:"Poppins", sans-serif;
+}
+
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+
+.btn-1{
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-1:hover{ 
+    background-color: rgb(74, 215, 240);
+    color: black;
+    border: 2px solid rgb(248, 247, 250);
+}
+
+.btn-2{
+    padding: 15px 28px; 
+    background-color: rgb(56, 54, 192);
+    color: white;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight:  600; 
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-2:hover{
+    background-color: white;
+    color: rgb(11, 132, 245);
+}
+
+.img-box img{
+    border-radius: 50%;
+    width: 550px;
+    box-shadow: 0 0 25px rgb(66, 163, 228),
+                0 0 50px rgb(21, 113, 129);
+}
+
+
+/* scroll */
+
+
+::-webkit-scrollbar{
+    width: 15px;    
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(101, 181, 247);
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgba(91, 185, 223, 0.6);
+    width: 50px;
+}
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    background-image: url(Super-cool-picture-backgrounds.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+ 
+    
+}
+
+.about-img img{
+    position: left;
+    width: 500px;
+    box-shadow: 0 0 25px rgb(37, 34, 235),
+                0 0 45px rgb(11, 43, 228);
+    border-radius: 50%;      
+    margin-right: 30px;      
+}
+
+
+.about-content h2{
+
+    text-align: le ;
+    color: white;
+    font-size: 42px;
+}
+
+.about-content h3{
+  
+    font-size: 50px;
+    color: white;
+}
+
+.about-content p {
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+    text-align: justify;
+    
+}
+
+
+\\CONTACT INFORMATION
+
+.contact-form h2{
+    text-align: left;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+
+}
+.contact-form form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center ;
+    margin-bottom: 1em; 
+   
+}
+
+
+.contact-form form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.contact-form form .input-box input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background: rgb(240, 245, 245);
+    border-radius: 1rem;
+    resize: none;
+}
+
+.contact-form{
+    background-image: url(Super-cool-picture-backgrounds.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-form  h2{
+    color: white;
+   text-align: center; 
+   gap: 2em;
+}
+
+
+
+
+
+
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    top: 100%;
+    padding: 40px 0;
+    background-color:black;
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px ;
+    color: white;
+}
+
+.footer .social a{
+    font-size: 24px;
+    color: white;
+    border: 2px solid rgb(12, 54, 238);
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px rgb(75, 75, 233), 0 0 10px rgb(53, 134, 226) ;
+    transition: 0.3s ease;
+}
+
+.footer .social a:hover{
+    transform: scale(1.2) translateY(-10px);
+    color: rgb(14, 210, 245);
+    border: 2px solid rgb(15, 121, 221);
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: rgb(240, 235, 235);
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease ;
+}
+
+.footer ul li a:hover{
+    border-bottom: 3px solid rgb(35, 101, 243);
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size:  15px; 
+    color:rgb(243, 238, 238) ;
+}
+
+
+
+
+
+
+/*typing text functionality*/
+
+
+.typing-text{
+    font-size: 40px;
+    font-weight: 800;
+    min-width:280px ;
+    margin-left: 10px;
+    
+
+}
+
+.typing-text{
+    position: relative;
+
+}
+
+.typing-text::before{
+    content: "Software Developer";
+    color:  rgb(70, 194, 243);
+    animation: words 20s infinite;
+}
+
+.typing-text::after{
+    content: "";
+    background-color:transparent;
+    position: absolute;
+    width: calc(100% + 8px) ;
+    border-left: 3px solid black;
+    height: 100%;
+    right: -8;
+    animation: cursor 0.6s infinite;
+    margin-top: 13px;
+}
+
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #fdfafa;
+    }
+}
+
+@keyframes words{
+    0%{
+        content: "Web Developer";
+    }
+
+    21%,40%{
+        content: "Developer";
+    }
+
+    41%,60%{
+        content: "Web designer";
+    }
+    61%,80%{
+        content: "College Student";
+    }
+    81%,100%{
+        content: "Good Person";
+    }
+}
